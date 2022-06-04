@@ -17,7 +17,7 @@ export default function Ninjas({data}) {
     <div>
         <h1>Here Come the ninjas!</h1>
         {data.map(ninja => (
-          <Link href={`/ninjas/${ninja.id}`}> key={ninja.id}>
+          <Link href={`/ninjas/${ninja.id}`} key={ninja.id}>
             <a className={styles.single}>
               <h3>{ ninja.name}</h3>
             </a>
